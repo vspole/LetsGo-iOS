@@ -21,7 +21,7 @@ struct ExploreView: View {
             searchBar
             tabSelectView
             if viewModel.isLoading {
-                Spacer()
+                //Spacer()
                 ProgressView()
             } else {
                 businessList
