@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69378AF428EA3B7700593DCC /* LetsGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378AF328EA3B7700593DCC /* LetsGoApp.swift */; };
+		69378AF628EA3B7700593DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378AF528EA3B7700593DCC /* ContentView.swift */; };
+		69378AF828EA3B7900593DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69378AF728EA3B7900593DCC /* Assets.xcassets */; };
+		69378B0228EA3B9E00593DCC /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B0128EA3B9E00593DCC /* DependencyContainer.swift */; };
+		69378B0428EA3BF400593DCC /* EntityProtocol .swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B0328EA3BF400593DCC /* EntityProtocol .swift */; };
+		69378B0728EA3C5800593DCC /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B0628EA3C5800593DCC /* ExploreView.swift */; };
+		69378B0C28EA40E900593DCC /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B0B28EA40E900593DCC /* ScaledFont.swift */; };
+		69378B0E28EA434200593DCC /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B0D28EA434200593DCC /* Size.swift */; };
+		69378B1328EA572500593DCC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 69378B1228EA572500593DCC /* Alamofire */; };
+		69378B1628EA576100593DCC /* YelpNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B1528EA576100593DCC /* YelpNetworkingService.swift */; };
+		69378B1828EA57C500593DCC /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B1728EA57C500593DCC /* BusinessModel.swift */; };
+		69378B1A28EA614D00593DCC /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B1928EA614D00593DCC /* Endpoints.swift */; };
+		69378B1C28EA677400593DCC /* BussinessSearchReturnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B1B28EA677400593DCC /* BussinessSearchReturnModel.swift */; };
+		69378B1E28EA9CE100593DCC /* BusinessListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B1D28EA9CE100593DCC /* BusinessListView.swift */; };
+		69378B2428EAA97900593DCC /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B2328EAA97900593DCC /* RatingStarView.swift */; };
+		69378B2828EAC2D600593DCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69378B2728EAC2D600593DCC /* GoogleService-Info.plist */; };
+		69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B3128EB3F3B00593DCC /* LocationService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69378AF028EA3B7700593DCC /* LetsGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69378AF328EA3B7700593DCC /* LetsGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoApp.swift; sourceTree = "<group>"; };
+		69378AF528EA3B7700593DCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69378AF728EA3B7900593DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69378B0128EA3B9E00593DCC /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		69378B0328EA3BF400593DCC /* EntityProtocol .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityProtocol .swift"; sourceTree = "<group>"; };
+		69378B0628EA3C5800593DCC /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		69378B0B28EA40E900593DCC /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
+		69378B0D28EA434200593DCC /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		69378B1528EA576100593DCC /* YelpNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpNetworkingService.swift; sourceTree = "<group>"; };
+		69378B1728EA57C500593DCC /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
+		69378B1928EA614D00593DCC /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		69378B1B28EA677400593DCC /* BussinessSearchReturnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BussinessSearchReturnModel.swift; sourceTree = "<group>"; };
+		69378B1D28EA9CE100593DCC /* BusinessListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListView.swift; sourceTree = "<group>"; };
+		69378B2328EAA97900593DCC /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
+		69378B2728EAC2D600593DCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69378AED28EA3B7700593DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69378B1328EA572500593DCC /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69378AE728EA3B7700593DCC = {
+			isa = PBXGroup;
+			children = (
+				69378AF228EA3B7700593DCC /* LetsGo */,
+				69378AF128EA3B7700593DCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69378AF128EA3B7700593DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69378AF028EA3B7700593DCC /* LetsGo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69378AF228EA3B7700593DCC /* LetsGo */ = {
+			isa = PBXGroup;
+			children = (
+				69378B2C28EB3E1D00593DCC /* Views */,
+				69378B2A28EB3DF100593DCC /* Models */,
+				69378B1428EA572D00593DCC /* Networking */,
+				69378B0A28EA40DD00593DCC /* Constants */,
+				69378B0528EA3C3C00593DCC /* DependencyContainer */,
+				69378AF328EA3B7700593DCC /* LetsGoApp.swift */,
+				69378AF528EA3B7700593DCC /* ContentView.swift */,
+				69378AF728EA3B7900593DCC /* Assets.xcassets */,
+				69378B2728EAC2D600593DCC /* GoogleService-Info.plist */,
+			);
+			path = LetsGo;
+			sourceTree = "<group>";
+		};
+		69378B0528EA3C3C00593DCC /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				69378B0328EA3BF400593DCC /* EntityProtocol .swift */,
+				69378B0128EA3B9E00593DCC /* DependencyContainer.swift */,
+				69378B3128EB3F3B00593DCC /* LocationService.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		69378B0A28EA40DD00593DCC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				69378B0B28EA40E900593DCC /* ScaledFont.swift */,
+				69378B0D28EA434200593DCC /* Size.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		69378B1428EA572D00593DCC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				69378B1528EA576100593DCC /* YelpNetworkingService.swift */,
+				69378B1928EA614D00593DCC /* Endpoints.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		69378B2A28EB3DF100593DCC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69378B1728EA57C500593DCC /* BusinessModel.swift */,
+				69378B1B28EA677400593DCC /* BussinessSearchReturnModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69378B2C28EB3E1D00593DCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69378B2E28EB3E2F00593DCC /* Fragment */,
+				69378B2D28EB3E2300593DCC /* Full */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69378B2D28EB3E2300593DCC /* Full */ = {
+			isa = PBXGroup;
+			children = (
+				69378B0628EA3C5800593DCC /* ExploreView.swift */,
+			);
+			path = Full;
+			sourceTree = "<group>";
+		};
+		69378B2E28EB3E2F00593DCC /* Fragment */ = {
+			isa = PBXGroup;
+			children = (
+				69378B1D28EA9CE100593DCC /* BusinessListView.swift */,
+				69378B2328EAA97900593DCC /* RatingStarView.swift */,
+			);
+			path = Fragment;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69378AEF28EA3B7700593DCC /* LetsGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69378AFE28EA3B7900593DCC /* Build configuration list for PBXNativeTarget "LetsGo" */;
+			buildPhases = (
+				69378AEC28EA3B7700593DCC /* Sources */,
+				69378AED28EA3B7700593DCC /* Frameworks */,
+				69378AEE28EA3B7700593DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetsGo;
+			packageProductDependencies = (
+				69378B1228EA572500593DCC /* Alamofire */,
+			);
+			productName = LetsGo;
+			productReference = 69378AF028EA3B7700593DCC /* LetsGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69378AE828EA3B7700593DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					69378AEF28EA3B7700593DCC = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 69378AEB28EA3B7700593DCC /* Build configuration list for PBXProject "LetsGo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69378AE728EA3B7700593DCC;
+			packageReferences = (
+				69378B1128EA572500593DCC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				69378B2928EAC34A00593DCC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 69378AF128EA3B7700593DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69378AEF28EA3B7700593DCC /* LetsGo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69378AEE28EA3B7700593DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69378AF828EA3B7900593DCC /* Assets.xcassets in Resources */,
+				69378B2828EAC2D600593DCC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69378AEC28EA3B7700593DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69378B0C28EA40E900593DCC /* ScaledFont.swift in Sources */,
+				69378B1628EA576100593DCC /* YelpNetworkingService.swift in Sources */,
+				69378B0E28EA434200593DCC /* Size.swift in Sources */,
+				69378AF628EA3B7700593DCC /* ContentView.swift in Sources */,
+				69378B1E28EA9CE100593DCC /* BusinessListView.swift in Sources */,
+				69378B1A28EA614D00593DCC /* Endpoints.swift in Sources */,
+				69378B0228EA3B9E00593DCC /* DependencyContainer.swift in Sources */,
+				69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */,
+				69378B1828EA57C500593DCC /* BusinessModel.swift in Sources */,
+				69378B1C28EA677400593DCC /* BussinessSearchReturnModel.swift in Sources */,
+				69378B2428EAA97900593DCC /* RatingStarView.swift in Sources */,
+				69378AF428EA3B7700593DCC /* LetsGoApp.swift in Sources */,
+				69378B0428EA3BF400593DCC /* EntityProtocol .swift in Sources */,
+				69378B0728EA3C5800593DCC /* ExploreView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		69378AFC28EA3B7900593DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69378AFD28EA3B7900593DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69378AFF28EA3B7900593DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 72C98PVW56;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"LetsGo needs your location to reccomend places close to you\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.LetsGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69378B0028EA3B7900593DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 72C98PVW56;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"LetsGo needs your location to reccomend places close to you\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.LetsGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69378AEB28EA3B7700593DCC /* Build configuration list for PBXProject "LetsGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69378AFC28EA3B7900593DCC /* Debug */,
+				69378AFD28EA3B7900593DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69378AFE28EA3B7900593DCC /* Build configuration list for PBXNativeTarget "LetsGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69378AFF28EA3B7900593DCC /* Debug */,
+				69378B0028EA3B7900593DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69378B1128EA572500593DCC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		69378B2928EAC34A00593DCC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69378B1228EA572500593DCC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69378B1128EA572500593DCC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 69378AE828EA3B7700593DCC /* Project object */;
+}
