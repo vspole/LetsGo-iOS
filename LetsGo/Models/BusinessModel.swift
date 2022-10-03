@@ -1,0 +1,31 @@
+//
+//  BusinessModel.swift
+//  LetsGo
+//
+//  Created by Vishal Polepalli on 10/2/22.
+//
+
+import Foundation
+
+struct BusinessModel: Decodable, Hashable, Identifiable {
+    let id: String
+    let name: String
+    let imageURLString: String
+    let review_count: Int
+    let rating: Double
+
+    var imageURL: URL? {
+        URL(string: imageURLString)
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case imageURLString = "image_url"
+        case review_count
+        case rating
+    }
+}
+
+
+

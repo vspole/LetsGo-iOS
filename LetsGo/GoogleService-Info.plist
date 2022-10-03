@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1093008335189-m32niej5cummn4l37ue26m4u0mn1t4tq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1093008335189-m32niej5cummn4l37ue26m4u0mn1t4tq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDAVwk_H7C8R2dwesdlyOhxYeTkS2CWU00</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1093008335189</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.vishal.LetsGo</string>
+	<key>PROJECT_ID</key>
+	<string>letsgo-69e94</string>
+	<key>STORAGE_BUCKET</key>
+	<string>letsgo-69e94.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1093008335189:ios:b4ffe2dea32106a583cfdc</string>
+</dict>
+</plist>
