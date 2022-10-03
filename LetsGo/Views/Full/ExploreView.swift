@@ -166,6 +166,7 @@ extension ExploreView {
         func fetchBusinesses() {
             if !dependencyContainer.locationService.permissionStatus {
                 //Alert View Controller need location
+                return
             }
 
             isLoading = true
