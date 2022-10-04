@@ -24,7 +24,6 @@
 		69378B2428EAA97900593DCC /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B2328EAA97900593DCC /* RatingStarView.swift */; };
 		69378B2828EAC2D600593DCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69378B2728EAC2D600593DCC /* GoogleService-Info.plist */; };
 		69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B3128EB3F3B00593DCC /* LocationService.swift */; };
-		696B424228EBDEBB00695C69 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 696B424128EBDEBB00695C69 /* Fonts */; };
 		696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */; };
 		696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */; };
 		696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */; };
@@ -48,7 +47,6 @@
 		69378B2328EAA97900593DCC /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
 		69378B2728EAC2D600593DCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		696B424128EBDEBB00695C69 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 		69378AE728EA3B7700593DCC = {
 			isa = PBXGroup;
 			children = (
-				696B424128EBDEBB00695C69 /* Fonts */,
 				69378AF228EA3B7700593DCC /* LetsGo */,
 				69378AF128EA3B7700593DCC /* Products */,
 			);
@@ -246,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				696B424228EBDEBB00695C69 /* Fonts in Resources */,
 				69378AF828EA3B7900593DCC /* Assets.xcassets in Resources */,
 				696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */,
 				696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */,
