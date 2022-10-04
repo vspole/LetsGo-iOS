@@ -25,6 +25,7 @@ struct LetsGoApp: App {
     var body: some Scene {
         WindowGroup {
             ExploreView(viewModel: .init(container: container))
+                .preferredColorScheme(.light)
         }
     }
 }
