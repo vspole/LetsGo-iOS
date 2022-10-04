@@ -110,23 +110,20 @@ extension ExploreView {
             LazyVStack {
                 ForEach(viewModel.businesses) { business in
                     BusinessListView(configuration: business)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.orange, lineWidth: 2)
-                        )
                 }
             }
         }
-        .padding(.horizontal, 10)
+        //.padding(.horizontal, 10)
     }
 
     func tabItemView(tab: TabItems) -> some View {
        return ZStack {
             RoundedRectangle(cornerRadius: 10)
-               .stroke(Color.orange, lineWidth: 2)
-               .background(RoundedRectangle(cornerRadius: 10).fill(viewModel.selectedTabItem == tab ? .gray : Color(UIColor.systemBackground)))
-               .frame(height: 20)
+               .stroke(Color.green, lineWidth: 2)
+               .background(RoundedRectangle(cornerRadius: 10).fill(.green))
+               .frame(height: 30)
            Text(tab.rawValue)
+               .scaledFont(type: viewModel.selectedTabItem == tab ? .openSansBold : .openSansRegular, size: 17, color: .white)
         }
     }
 }
