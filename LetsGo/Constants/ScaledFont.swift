@@ -28,11 +28,6 @@ struct ScaledFont: ViewModifier {
 }
 
 enum ScaledFontType: String {
-    // https://fonts.google.com/specimen/PT+Sans
-    case ptSansRegular = "PTSans-Regular"
-    case ptSansItalic = "PTSans-Italic"
-    case ptSansBold = "PTSans-Bold"
-
     // https://fonts.google.com/specimen/Open+Sans
     case openSansRegular = "OpenSans-Regular"
     case openSansSemiBold = "OpenSans-Semibold"
@@ -40,13 +35,13 @@ enum ScaledFontType: String {
 }
 
 extension View {
-    func scaledFont(type: ScaledFontType = .ptSansRegular, size: CGFloat = 17, color: Color? = nil) -> some View {
+    func scaledFont(type: ScaledFontType = .openSansRegular, size: CGFloat = 17, color: Color? = nil) -> some View {
         modifier(ScaledFont(name: type.rawValue, size: size, color: color))
     }
 }
 
 extension UIFont {
-    static func scaledFont(type: ScaledFontType = .ptSansRegular, size: CGFloat = 17) -> UIFont {
+    static func scaledFont(type: ScaledFontType = .openSansRegular, size: CGFloat = 17) -> UIFont {
         let font = UIFont(name: type.rawValue, size: size) ?? .systemFont(ofSize: size)
         return UIFontMetrics.default.scaledFont(for: font)
     }
