@@ -74,7 +74,7 @@ platform :ios do
 
     gym(
       configuration: "Release",
-      workspace: "LetsGo.xcworkspace",
+      workspace: "LetsGo.xcodeproj",
       scheme: "LetsGo",
       export_method: "app-store",
       export_options: {
