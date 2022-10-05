@@ -27,6 +27,13 @@
 		696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */; };
 		696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */; };
 		696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */; };
+		F9D40E6028ED07BC00BCA54B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D40E5F28ED07BC00BCA54B /* Color.swift */; };
+		F9D40E6728ED0CF600BCA54B /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D40E6228ED0CF600BCA54B /* Quicksand-Light.ttf */; };
+		F9D40E6828ED0CF600BCA54B /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D40E6328ED0CF600BCA54B /* Quicksand-Regular.ttf */; };
+		F9D40E6928ED0CF600BCA54B /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D40E6428ED0CF600BCA54B /* Quicksand-Bold.ttf */; };
+		F9D40E6A28ED0CF600BCA54B /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D40E6528ED0CF600BCA54B /* Quicksand-Medium.ttf */; };
+		F9D40E6B28ED0CF600BCA54B /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D40E6628ED0CF600BCA54B /* Quicksand-SemiBold.ttf */; };
+		F9D40E6E28ED0F6A00BCA54B /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D40E6D28ED0F6A00BCA54B /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,13 @@
 		696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		F9D40E5F28ED07BC00BCA54B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F9D40E6228ED0CF600BCA54B /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		F9D40E6328ED0CF600BCA54B /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		F9D40E6428ED0CF600BCA54B /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		F9D40E6528ED0CF600BCA54B /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		F9D40E6628ED0CF600BCA54B /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		F9D40E6D28ED0F6A00BCA54B /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,7 @@
 			children = (
 				69378B0B28EA40E900593DCC /* ScaledFont.swift */,
 				69378B0D28EA434200593DCC /* Size.swift */,
+				F9D40E5F28ED07BC00BCA54B /* Color.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -130,6 +145,7 @@
 			children = (
 				69378B1728EA57C500593DCC /* BusinessModel.swift */,
 				69378B1B28EA677400593DCC /* BussinessSearchReturnModel.swift */,
+				F9D40E6D28ED0F6A00BCA54B /* CategoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -163,6 +179,7 @@
 		696B424428EBDFA100695C69 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F9D40E6128ED0CD900BCA54B /* Quicksand */,
 				696B424528EBDFA800695C69 /* OpenSans */,
 			);
 			path = Fonts;
@@ -176,6 +193,18 @@
 				696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */,
 			);
 			path = OpenSans;
+			sourceTree = "<group>";
+		};
+		F9D40E6128ED0CD900BCA54B /* Quicksand */ = {
+			isa = PBXGroup;
+			children = (
+				F9D40E6428ED0CF600BCA54B /* Quicksand-Bold.ttf */,
+				F9D40E6228ED0CF600BCA54B /* Quicksand-Light.ttf */,
+				F9D40E6528ED0CF600BCA54B /* Quicksand-Medium.ttf */,
+				F9D40E6328ED0CF600BCA54B /* Quicksand-Regular.ttf */,
+				F9D40E6628ED0CF600BCA54B /* Quicksand-SemiBold.ttf */,
+			);
+			path = Quicksand;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,10 +273,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				69378AF828EA3B7900593DCC /* Assets.xcassets in Resources */,
+				F9D40E6B28ED0CF600BCA54B /* Quicksand-SemiBold.ttf in Resources */,
 				696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */,
+				F9D40E6A28ED0CF600BCA54B /* Quicksand-Medium.ttf in Resources */,
+				F9D40E6828ED0CF600BCA54B /* Quicksand-Regular.ttf in Resources */,
 				696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */,
+				F9D40E6728ED0CF600BCA54B /* Quicksand-Light.ttf in Resources */,
 				696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */,
 				69378B2828EAC2D600593DCC /* GoogleService-Info.plist in Resources */,
+				F9D40E6928ED0CF600BCA54B /* Quicksand-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +300,12 @@
 				69378B1A28EA614D00593DCC /* Endpoints.swift in Sources */,
 				69378B0228EA3B9E00593DCC /* DependencyContainer.swift in Sources */,
 				69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */,
+				F9D40E6028ED07BC00BCA54B /* Color.swift in Sources */,
 				69378B1828EA57C500593DCC /* BusinessModel.swift in Sources */,
 				69378B1C28EA677400593DCC /* BussinessSearchReturnModel.swift in Sources */,
 				69378B2428EAA97900593DCC /* RatingStarView.swift in Sources */,
 				69378AF428EA3B7700593DCC /* LetsGoApp.swift in Sources */,
+				F9D40E6E28ED0F6A00BCA54B /* CategoryModel.swift in Sources */,
 				69378B0428EA3BF400593DCC /* EntityProtocol .swift in Sources */,
 				69378B0728EA3C5800593DCC /* ExploreView.swift in Sources */,
 			);

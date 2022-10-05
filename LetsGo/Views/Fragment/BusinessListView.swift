@@ -10,7 +10,8 @@ import SwiftUI
 
 struct BusinessListView: View {
     let configuration: BusinessModel
-
+    let categories: [CategoryModel]
+   
     var body: some View {
         HStack() {
             AsyncImage(
@@ -29,32 +30,38 @@ struct BusinessListView: View {
 
             VStack(alignment: .leading, spacing: 8) {
                 Text(configuration.name)
-                    .scaledFont(type: .openSansBold, size: 17, color: .black)
+                    .scaledFont(type: .quickSandBold, size: 17, color: .black)
+                if let category = categories[0]
+                {
+                    Text(category.title)
+                        .scaledFont(type: .quickSandRegular, size: 13, color: .black)
+                }
+                
                 HStack(alignment: .center, spacing: 0) {
                     Text(String(format: "%.1f", configuration.rating))
-                        .scaledFont(type: .openSansSemiBold, size: 15, color: .green)
+                        .scaledFont(type: .openSansSemiBold, size: 15, color: Color.accentColor)
                         .multilineTextAlignment(.leading)
                         .padding(.trailing, 5)
-                    Image(systemName: "star")
+                    Image(systemName: "star.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 15, height: 15)
                         .padding(.trailing, 5)
-                        .foregroundColor(.green)
+                        .foregroundColor(Color.accentColor)
 
                     Text("(\(configuration.review_count))")
-                        .scaledFont(type: .openSansRegular, size: 12, color: .green)
+                        .scaledFont(type: .openSansRegular, size: 12, color: Color.accentColor)
                         .multilineTextAlignment(.leading)
                         .padding(.trailing, 15)
                     Spacer()
                     Image(systemName: "heart")
-                        .foregroundColor(.green)
-                    Spacer()
-                    Image(systemName: "square.and.arrow.up")
-                        .foregroundColor(.green)
+                        .foregroundColor(Color.accentColor)
+//                    Spacer()
+//                    Image(systemName: "square.and.arrow.up")
+//                        .foregroundColor(Color.accentColor)
                     Spacer()
                     Image(systemName: "eye.slash")
-                        .foregroundColor(.green)
+                        .foregroundColor(Color.accentColor)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
