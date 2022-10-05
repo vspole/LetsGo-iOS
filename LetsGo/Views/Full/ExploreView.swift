@@ -13,11 +13,7 @@ struct ExploreView: View {
 
     var body: some View {
         VStack {
-            if colorScheme == .dark {
-                logoInvert
-            } else {
-                logo
-            }
+            logo
             searchBar
             tabSelectView
             if viewModel.isLoading {
@@ -109,7 +105,7 @@ extension ExploreView {
         ScrollView {
             LazyVStack {
                 ForEach(viewModel.businesses) { business in
-                    BusinessListView(configuration: business)
+                    BusinessListView(configuration: business, categories: business.categories)
                 }
             }
         }
@@ -118,12 +114,10 @@ extension ExploreView {
 
     func tabItemView(tab: TabItems) -> some View {
        return ZStack {
-            RoundedRectangle(cornerRadius: 10)
-               .stroke(Color.green, lineWidth: 2)
-               .background(RoundedRectangle(cornerRadius: 10).fill(.green))
+           RoundedRectangle(cornerRadius: 10).fill(Color.accentColor)
                .frame(height: 30)
            Text(tab.rawValue)
-               .scaledFont(type: viewModel.selectedTabItem == tab ? .openSansBold : .openSansRegular, size: 17, color: .white)
+               .scaledFont(type: viewModel.selectedTabItem == tab ? .quickSandSemiBold : .quickSandLight, size: 17, color: .white)
         }
     }
 }
@@ -177,6 +171,7 @@ extension ExploreView {
                 switch response.result {
                 case .success(let value):
                     self?.businesses = value.businesses
+                    print("Here: ", self?.businesses[0].categories[0])
                 case .failure(let error):
                     //Error handling here
                     print("Error: ", error)
