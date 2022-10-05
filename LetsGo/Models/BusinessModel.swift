@@ -13,7 +13,8 @@ struct BusinessModel: Decodable, Hashable, Identifiable {
     let imageURLString: String
     let review_count: Int
     let rating: Double
-
+    let categories: [CategoryModel]
+    
     var imageURL: URL? {
         URL(string: imageURLString)
     }
@@ -24,6 +25,7 @@ struct BusinessModel: Decodable, Hashable, Identifiable {
         case imageURLString = "image_url"
         case review_count
         case rating
+        case categories
     }
 }
 

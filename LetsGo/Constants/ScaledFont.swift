@@ -32,6 +32,12 @@ enum ScaledFontType: String {
     case openSansRegular = "OpenSans-Regular"
     case openSansSemiBold = "OpenSans-Semibold"
     case openSansBold = "OpenSans-Bold"
+    case quickSandMedium = "Quicksand-Medium"
+    case quickSandBold = "Quicksand-Bold"
+    case quickSandLight = "Quicksand-Light"
+    case quickSandRegular = "Quicksand-Regular"
+    case quickSandSemiBold = "Quicksand-SemiBold"
+
 }
 
 extension View {
