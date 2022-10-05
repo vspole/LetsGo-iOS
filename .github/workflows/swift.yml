@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: xcodebuild clean test -project "LetsGo.xcproject" -scheme "LetsGo" -destination "platform=iOS Simulator,name=iPhone 13 Pro,OS=latest" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+      run: xcodebuild clean test -workspace "LetsGo.xcworkspace" -scheme "LetsGo" -destination "platform=iOS Simulator,name=iPhone 13 Pro,OS=latest" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
