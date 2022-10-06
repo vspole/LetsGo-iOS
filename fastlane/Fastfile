@@ -75,12 +75,11 @@ platform :ios do
     )
 
     gym(
-      scheme: "LetsGo"
       configuration: "Release",
       workspace: "LetsGo.xcworkspace",
       scheme: "LetsGo",
+      export_method: "app-store",
       export_options: {
-        method: "app-store",
         provisioningProfiles: {
             DEVELOPER_APP_ID => PROVISIONING_PROFILE_SPECIFIER
         }
