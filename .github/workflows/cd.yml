@@ -10,7 +10,7 @@ on:
 jobs:
   deploy:
     name: Deploying to Testflight
-    runs-on: macOS-latest
+    runs-on: macOS-12
 
     steps:
       - name: Checkout repository
