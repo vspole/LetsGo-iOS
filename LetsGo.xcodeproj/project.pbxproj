@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6245A558F382DB58A8240378 /* Pods_LetsGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ABF925E90F109BFB1CA756 /* Pods_LetsGo.framework */; };
 		69378AF428EA3B7700593DCC /* LetsGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378AF328EA3B7700593DCC /* LetsGoApp.swift */; };
 		69378AF628EA3B7700593DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378AF528EA3B7700593DCC /* ContentView.swift */; };
 		69378AF828EA3B7900593DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69378AF728EA3B7900593DCC /* Assets.xcassets */; };
@@ -24,9 +25,11 @@
 		69378B2428EAA97900593DCC /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B2328EAA97900593DCC /* RatingStarView.swift */; };
 		69378B2828EAC2D600593DCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69378B2728EAC2D600593DCC /* GoogleService-Info.plist */; };
 		69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B3128EB3F3B00593DCC /* LocationService.swift */; };
+		694CAC5328EE2AC90061339A /* LetsGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CAC5228EE2AC90061339A /* LetsGoTests.swift */; };
 		696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */; };
 		696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */; };
 		696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */; };
+		F27C48F0E43B9D5871C3D80A /* Pods_LetsGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F387D7AA02FA1CF3C12137 /* Pods_LetsGoTests.framework */; };
 		F9D40E6028ED07BC00BCA54B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D40E5F28ED07BC00BCA54B /* Color.swift */; };
 		F9D40E6728ED0CF600BCA54B /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D40E6228ED0CF600BCA54B /* Quicksand-Light.ttf */; };
 		F9D40E6828ED0CF600BCA54B /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D40E6328ED0CF600BCA54B /* Quicksand-Regular.ttf */; };
@@ -36,7 +39,19 @@
 		F9D40E6E28ED0F6A00BCA54B /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D40E6D28ED0F6A00BCA54B /* CategoryModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		694CAC5428EE2AC90061339A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69378AE828EA3B7700593DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69378AEF28EA3B7700593DCC;
+			remoteInfo = LetsGo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		18ABF925E90F109BFB1CA756 /* Pods_LetsGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28836FEA71FC5A77700D263B /* Pods-LetsGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoTests.debug.xcconfig"; path = "Target Support Files/Pods-LetsGoTests/Pods-LetsGoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69378AF028EA3B7700593DCC /* LetsGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69378AF328EA3B7700593DCC /* LetsGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoApp.swift; sourceTree = "<group>"; };
 		69378AF528EA3B7700593DCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,9 +69,14 @@
 		69378B2328EAA97900593DCC /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
 		69378B2728EAC2D600593DCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		694CAC5028EE2AC90061339A /* LetsGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		694CAC5228EE2AC90061339A /* LetsGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoTests.swift; sourceTree = "<group>"; };
 		696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		9EDBCC07CF2016A4ED88A0A5 /* Pods-LetsGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGo.debug.xcconfig"; path = "Target Support Files/Pods-LetsGo/Pods-LetsGo.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E732CC729F545B8C76F173 /* Pods-LetsGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGo.release.xcconfig"; path = "Target Support Files/Pods-LetsGo/Pods-LetsGo.release.xcconfig"; sourceTree = "<group>"; };
+		A9F387D7AA02FA1CF3C12137 /* Pods_LetsGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9D40E5F28ED07BC00BCA54B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F9D40E6228ED0CF600BCA54B /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
 		F9D40E6328ED0CF600BCA54B /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
@@ -64,6 +84,7 @@
 		F9D40E6528ED0CF600BCA54B /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		F9D40E6628ED0CF600BCA54B /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		F9D40E6D28ED0F6A00BCA54B /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		FE0AED1ABEC0B70D15FF64A1 /* Pods-LetsGoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoTests.release.xcconfig"; path = "Target Support Files/Pods-LetsGoTests/Pods-LetsGoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,17 +93,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				69378B1328EA572500593DCC /* Alamofire in Frameworks */,
+				6245A558F382DB58A8240378 /* Pods_LetsGo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694CAC4D28EE2AC90061339A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27C48F0E43B9D5871C3D80A /* Pods_LetsGoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34779F09F86977E890457C27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18ABF925E90F109BFB1CA756 /* Pods_LetsGo.framework */,
+				A9F387D7AA02FA1CF3C12137 /* Pods_LetsGoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		69378AE728EA3B7700593DCC = {
 			isa = PBXGroup;
 			children = (
 				69378AF228EA3B7700593DCC /* LetsGo */,
+				694CAC5128EE2AC90061339A /* LetsGoTests */,
 				69378AF128EA3B7700593DCC /* Products */,
+				C6BB6957E523FF0F598C5951 /* Pods */,
+				34779F09F86977E890457C27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				69378AF028EA3B7700593DCC /* LetsGo.app */,
+				694CAC5028EE2AC90061339A /* LetsGoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +219,14 @@
 			path = Fragment;
 			sourceTree = "<group>";
 		};
+		694CAC5128EE2AC90061339A /* LetsGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				694CAC5228EE2AC90061339A /* LetsGoTests.swift */,
+			);
+			path = LetsGoTests;
+			sourceTree = "<group>";
+		};
 		696B424428EBDFA100695C69 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +244,18 @@
 				696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */,
 			);
 			path = OpenSans;
+			sourceTree = "<group>";
+		};
+		C6BB6957E523FF0F598C5951 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EDBCC07CF2016A4ED88A0A5 /* Pods-LetsGo.debug.xcconfig */,
+				A3E732CC729F545B8C76F173 /* Pods-LetsGo.release.xcconfig */,
+				28836FEA71FC5A77700D263B /* Pods-LetsGoTests.debug.xcconfig */,
+				FE0AED1ABEC0B70D15FF64A1 /* Pods-LetsGoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		F9D40E6128ED0CD900BCA54B /* Quicksand */ = {
@@ -214,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69378AFE28EA3B7900593DCC /* Build configuration list for PBXNativeTarget "LetsGo" */;
 			buildPhases = (
+				C4AE027026B2B5947CAEA52C /* [CP] Check Pods Manifest.lock */,
 				69378AEC28EA3B7700593DCC /* Sources */,
 				69378AED28EA3B7700593DCC /* Frameworks */,
 				69378AEE28EA3B7700593DCC /* Resources */,
@@ -230,6 +294,25 @@
 			productReference = 69378AF028EA3B7700593DCC /* LetsGo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		694CAC4F28EE2AC90061339A /* LetsGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694CAC5828EE2AC90061339A /* Build configuration list for PBXNativeTarget "LetsGoTests" */;
+			buildPhases = (
+				5AFFB382D90A94C6CAEBD134 /* [CP] Check Pods Manifest.lock */,
+				694CAC4C28EE2AC90061339A /* Sources */,
+				694CAC4D28EE2AC90061339A /* Frameworks */,
+				694CAC4E28EE2AC90061339A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694CAC5528EE2AC90061339A /* PBXTargetDependency */,
+			);
+			name = LetsGoTests;
+			productName = LetsGoTests;
+			productReference = 694CAC5028EE2AC90061339A /* LetsGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,6 +325,10 @@
 				TargetAttributes = {
 					69378AEF28EA3B7700593DCC = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					694CAC4F28EE2AC90061339A = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 69378AEF28EA3B7700593DCC;
 					};
 				};
 			};
@@ -263,6 +350,7 @@
 			projectRoot = "";
 			targets = (
 				69378AEF28EA3B7700593DCC /* LetsGo */,
+				694CAC4F28EE2AC90061339A /* LetsGoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,7 +373,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		694CAC4E28EE2AC90061339A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AFFB382D90A94C6CAEBD134 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetsGoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4AE027026B2B5947CAEA52C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetsGo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		69378AEC28EA3B7700593DCC /* Sources */ = {
@@ -311,7 +453,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		694CAC4C28EE2AC90061339A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694CAC5328EE2AC90061339A /* LetsGoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		694CAC5528EE2AC90061339A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69378AEF28EA3B7700593DCC /* LetsGo */;
+			targetProxy = 694CAC5428EE2AC90061339A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		69378AFC28EA3B7900593DCC /* Debug */ = {
@@ -430,6 +588,7 @@
 		};
 		69378AFF28EA3B7900593DCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EDBCC07CF2016A4ED88A0A5 /* Pods-LetsGo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +624,7 @@
 		};
 		69378B0028EA3B7900593DCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E732CC729F545B8C76F173 /* Pods-LetsGo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -498,6 +658,44 @@
 			};
 			name = Release;
 		};
+		694CAC5628EE2AC90061339A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28836FEA71FC5A77700D263B /* Pods-LetsGoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72C98PVW56;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.LetsGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LetsGo";
+			};
+			name = Debug;
+		};
+		694CAC5728EE2AC90061339A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE0AED1ABEC0B70D15FF64A1 /* Pods-LetsGoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72C98PVW56;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.LetsGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LetsGo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -515,6 +713,15 @@
 			buildConfigurations = (
 				69378AFF28EA3B7900593DCC /* Debug */,
 				69378B0028EA3B7900593DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694CAC5828EE2AC90061339A /* Build configuration list for PBXNativeTarget "LetsGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694CAC5628EE2AC90061339A /* Debug */,
+				694CAC5728EE2AC90061339A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
