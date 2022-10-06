@@ -75,6 +75,7 @@ platform :ios do
     )
 
     gym(
+      scheme: "LetsGo"
       configuration: "Release",
       workspace: "LetsGo.xcworkspace",
       scheme: "LetsGo",
