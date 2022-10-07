@@ -6,15 +6,21 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct MainView: View {
     @StateObject var viewModel: ViewModel
     
     var body: some View {
-        if viewModel.isUserLoggedIn {
-            ExploreView(viewModel: .init(container: viewModel.container))
-        } else {
-            PhoneLoginView(viewModel: .init(container: viewModel.container, mainViewModel: viewModel))
+        NavigationStack {
+            if viewModel.isUserLoggedIn {
+                ExploreView(viewModel: .init(container: viewModel.container))
+            } else {
+                PhoneLoginView(viewModel: .init(container: viewModel.container, mainViewModel: viewModel))
+            }
+        }
+        .onAppear {
+            viewModel.viewDidAppear(self)
         }
     }
 }
@@ -27,6 +33,10 @@ extension MainView {
         
         init(container: DependencyContainer) {
             self.container = container
+        }
+        
+        func viewDidAppear(_ view: MainView) {
+            isUserLoggedIn = container.firebaseAuthService.isUserSignedIn()
         }
     }
 }
