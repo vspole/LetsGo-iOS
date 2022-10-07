@@ -256,6 +256,7 @@
 		69378B2C28EB3E1D00593DCC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69378AF528EA3B7700593DCC /* MainView.swift */,
 				69378B2E28EB3E2F00593DCC /* Fragment */,
 				69378B2D28EB3E2300593DCC /* Full */,
 			);
@@ -266,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				69378B0628EA3C5800593DCC /* ExploreView.swift */,
-				69378AF528EA3B7700593DCC /* MainView.swift */,
 				6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */,
 			);
 			path = Full;
