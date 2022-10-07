@@ -33,8 +33,6 @@ struct PhoneLoginView: View {
             viewModel.isEditing = false
             viewModel.dismissKeyboard()
         }
-        //.padding(.all, MARGIN_SCREEN)
-        //.frame(maxWidth: .infinity)
     }
     
 }
