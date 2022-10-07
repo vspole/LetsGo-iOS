@@ -26,7 +26,8 @@ extension DependencyContainer {
         let container = DependencyContainer()
         container.components = [
             YelpNetworkingService(entity: container),
-            LocationService(entity: container)
+            LocationService(entity: container),
+            FirebaseAuthService(entity: container)
         ]
         return container
     }
@@ -37,5 +38,6 @@ extension DependencyContainer {
 extension DependencyContainer {
     var yelpNetworkingService: YelpNetworkingServiceProtocol { getComponent() }
     var locationService: LocationServiceProtocol { getComponent() }
+    var firebaseAuthService: FirebaseAuthServiceProtocol { getComponent() }
 }
 
