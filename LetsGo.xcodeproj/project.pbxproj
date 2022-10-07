@@ -53,6 +53,7 @@
 		6946DCA328EF9E8000D9CB98 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DCA228EF9E8000D9CB98 /* FirebaseStorage */; };
 		6946DCA528EF9E8000D9CB98 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DCA428EF9E8000D9CB98 /* FirebaseStorageCombine-Community */; };
 		6946DCA828EFC86F00D9CB98 /* PhoneLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */; };
+		6946DCAA28EFDDBA00D9CB98 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946DCA928EFDDBA00D9CB98 /* FirebaseAuthService.swift */; };
 		694CAC5328EE2AC90061339A /* LetsGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CAC5228EE2AC90061339A /* LetsGoTests.swift */; };
 		696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */; };
 		696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */; };
@@ -99,6 +100,7 @@
 		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		6946DCA628EFA12A00D9CB98 /* LetsGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LetsGo.entitlements; sourceTree = "<group>"; };
 		6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginView.swift; sourceTree = "<group>"; };
+		6946DCA928EFDDBA00D9CB98 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		694CAC5028EE2AC90061339A /* LetsGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		694CAC5228EE2AC90061339A /* LetsGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoTests.swift; sourceTree = "<group>"; };
 		696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			children = (
 				69378B1528EA576100593DCC /* YelpNetworkingService.swift */,
 				69378B1928EA614D00593DCC /* Endpoints.swift */,
+				6946DCA928EFDDBA00D9CB98 /* FirebaseAuthService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				69378B1628EA576100593DCC /* YelpNetworkingService.swift in Sources */,
 				69378B0E28EA434200593DCC /* Size.swift in Sources */,
 				69378AF628EA3B7700593DCC /* MainView.swift in Sources */,
+				6946DCAA28EFDDBA00D9CB98 /* FirebaseAuthService.swift in Sources */,
 				69378B1E28EA9CE100593DCC /* BusinessListView.swift in Sources */,
 				69378B1A28EA614D00593DCC /* Endpoints.swift in Sources */,
 				69378B0228EA3B9E00593DCC /* DependencyContainer.swift in Sources */,
