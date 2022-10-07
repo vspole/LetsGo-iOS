@@ -171,7 +171,6 @@ extension ExploreView {
                 switch response.result {
                 case .success(let value):
                     self?.businesses = value.businesses
-                    print("Here: ", self?.businesses[0].categories[0])
                 case .failure(let error):
                     //Error handling here
                     print("Error: ", error)
