@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6245A558F382DB58A8240378 /* Pods_LetsGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ABF925E90F109BFB1CA756 /* Pods_LetsGo.framework */; };
 		69378AF428EA3B7700593DCC /* LetsGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378AF328EA3B7700593DCC /* LetsGoApp.swift */; };
-		69378AF628EA3B7700593DCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378AF528EA3B7700593DCC /* ContentView.swift */; };
+		69378AF628EA3B7700593DCC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378AF528EA3B7700593DCC /* MainView.swift */; };
 		69378AF828EA3B7900593DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69378AF728EA3B7900593DCC /* Assets.xcassets */; };
 		69378B0228EA3B9E00593DCC /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B0128EA3B9E00593DCC /* DependencyContainer.swift */; };
 		69378B0428EA3BF400593DCC /* EntityProtocol .swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B0328EA3BF400593DCC /* EntityProtocol .swift */; };
@@ -52,6 +52,7 @@
 		6946DCA128EF9E8000D9CB98 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DCA028EF9E8000D9CB98 /* FirebaseRemoteConfigSwift */; };
 		6946DCA328EF9E8000D9CB98 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DCA228EF9E8000D9CB98 /* FirebaseStorage */; };
 		6946DCA528EF9E8000D9CB98 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DCA428EF9E8000D9CB98 /* FirebaseStorageCombine-Community */; };
+		6946DCA828EFC86F00D9CB98 /* PhoneLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */; };
 		694CAC5328EE2AC90061339A /* LetsGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CAC5228EE2AC90061339A /* LetsGoTests.swift */; };
 		696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */; };
 		696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */; };
@@ -81,7 +82,7 @@
 		28836FEA71FC5A77700D263B /* Pods-LetsGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoTests.debug.xcconfig"; path = "Target Support Files/Pods-LetsGoTests/Pods-LetsGoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		69378AF028EA3B7700593DCC /* LetsGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69378AF328EA3B7700593DCC /* LetsGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoApp.swift; sourceTree = "<group>"; };
-		69378AF528EA3B7700593DCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69378AF528EA3B7700593DCC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		69378AF728EA3B7900593DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69378B0128EA3B9E00593DCC /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		69378B0328EA3BF400593DCC /* EntityProtocol .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityProtocol .swift"; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		69378B2728EAC2D600593DCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		6946DCA628EFA12A00D9CB98 /* LetsGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LetsGo.entitlements; sourceTree = "<group>"; };
+		6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginView.swift; sourceTree = "<group>"; };
 		694CAC5028EE2AC90061339A /* LetsGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		694CAC5228EE2AC90061339A /* LetsGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoTests.swift; sourceTree = "<group>"; };
 		696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -203,7 +205,7 @@
 				69378B0A28EA40DD00593DCC /* Constants */,
 				69378B0528EA3C3C00593DCC /* DependencyContainer */,
 				69378AF328EA3B7700593DCC /* LetsGoApp.swift */,
-				69378AF528EA3B7700593DCC /* ContentView.swift */,
+				69378AF528EA3B7700593DCC /* MainView.swift */,
 				69378AF728EA3B7900593DCC /* Assets.xcassets */,
 				69378B2728EAC2D600593DCC /* GoogleService-Info.plist */,
 			);
@@ -262,6 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				69378B0628EA3C5800593DCC /* ExploreView.swift */,
+				6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */,
 			);
 			path = Full;
 			sourceTree = "<group>";
@@ -519,7 +522,7 @@
 				69378B0C28EA40E900593DCC /* ScaledFont.swift in Sources */,
 				69378B1628EA576100593DCC /* YelpNetworkingService.swift in Sources */,
 				69378B0E28EA434200593DCC /* Size.swift in Sources */,
-				69378AF628EA3B7700593DCC /* ContentView.swift in Sources */,
+				69378AF628EA3B7700593DCC /* MainView.swift in Sources */,
 				69378B1E28EA9CE100593DCC /* BusinessListView.swift in Sources */,
 				69378B1A28EA614D00593DCC /* Endpoints.swift in Sources */,
 				69378B0228EA3B9E00593DCC /* DependencyContainer.swift in Sources */,
@@ -532,6 +535,7 @@
 				F9D40E6E28ED0F6A00BCA54B /* CategoryModel.swift in Sources */,
 				69378B0428EA3BF400593DCC /* EntityProtocol .swift in Sources */,
 				69378B0728EA3C5800593DCC /* ExploreView.swift in Sources */,
+				6946DCA828EFC86F00D9CB98 /* PhoneLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
