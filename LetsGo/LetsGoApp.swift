@@ -24,7 +24,8 @@ struct LetsGoApp: App {
     var container = DependencyContainer.create()
     var body: some Scene {
         WindowGroup {
-            ExploreView(viewModel: .init(container: container))
+            //ExploreView(viewModel: .init(container: container))
+            MainView(viewModel: .init(container: container))
                 .preferredColorScheme(.light)
         }
     }
