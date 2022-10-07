@@ -61,7 +61,7 @@ platform :ios do
       in_house: false
     )
 
-    increment_build_number(xcodeproj: "LetsGo.xcodeproj")
+    increment_build_number(build_number: number_of_commits)
 
 
     match(
