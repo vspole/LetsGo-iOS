@@ -11,19 +11,33 @@ struct TabBarView: View {
     @StateObject var viewModel: ViewModel
     
     var body: some View {
-        TabView(selection: $viewModel.selectedTab) {
-            ExploreView(viewModel: .init(container: viewModel.container))
-                .tabItem {
-                    Label(Constants.exploreTab, systemImage: "magnifyingglass")
-                }
-                .tag(Constants.exploreTab)
+        VStack {
+            logo
             
-            Text(Constants.favoriteTab)
-                .tabItem {
-                    Label(Constants.favoriteTab, systemImage: "heart")
-                }
-                .tag(Constants.favoriteTab)
+            TabView(selection: $viewModel.selectedTab) {
+                ExploreView(viewModel: .init(container: viewModel.container))
+                    .tabItem {
+                        Label(Constants.exploreTab, systemImage: "magnifyingglass")
+                    }
+                    .tag(Constants.exploreTab)
+                
+                FavoritesView(viewModel: .init(container: viewModel.container))
+                    .tabItem {
+                        Label(Constants.favoriteTab, systemImage: "heart")
+                    }
+                    .tag(Constants.favoriteTab)
+            }
         }
+    }
+}
+
+extension TabBarView {
+    var logo: some View {
+        Image("MainLogo")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(height: 75)
+            .padding(.horizontal, 100)
     }
 }
 

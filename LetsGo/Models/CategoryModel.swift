@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CategoryModel: Decodable, Hashable {
+struct CategoryModel: Codable, Hashable {
     let title: String
 
     enum CodingKeys: String, CodingKey {
