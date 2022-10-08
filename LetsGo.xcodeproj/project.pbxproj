@@ -60,6 +60,7 @@
 		696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */; };
 		69E577F828F1138A00AA370D /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577F728F1138A00AA370D /* LocalStorageManager.swift */; };
 		69E577FA28F1164B00AA370D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577F928F1164B00AA370D /* TabBarView.swift */; };
+		69E577FC28F119C200AA370D /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577FB28F119C200AA370D /* UserDefaultsKey.swift */; };
 		F27C48F0E43B9D5871C3D80A /* Pods_LetsGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F387D7AA02FA1CF3C12137 /* Pods_LetsGoTests.framework */; };
 		F9D40E6028ED07BC00BCA54B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D40E5F28ED07BC00BCA54B /* Color.swift */; };
 		F9D40E6728ED0CF600BCA54B /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D40E6228ED0CF600BCA54B /* Quicksand-Light.ttf */; };
@@ -110,6 +111,7 @@
 		696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		69E577F728F1138A00AA370D /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		69E577F928F1164B00AA370D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		69E577FB28F119C200AA370D /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		9EDBCC07CF2016A4ED88A0A5 /* Pods-LetsGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGo.debug.xcconfig"; path = "Target Support Files/Pods-LetsGo/Pods-LetsGo.debug.xcconfig"; sourceTree = "<group>"; };
 		A3E732CC729F545B8C76F173 /* Pods-LetsGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGo.release.xcconfig"; path = "Target Support Files/Pods-LetsGo/Pods-LetsGo.release.xcconfig"; sourceTree = "<group>"; };
 		A9F387D7AA02FA1CF3C12137 /* Pods_LetsGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,6 +236,7 @@
 				69378B0B28EA40E900593DCC /* ScaledFont.swift */,
 				69378B0D28EA434200593DCC /* Size.swift */,
 				F9D40E5F28ED07BC00BCA54B /* Color.swift */,
+				69E577FB28F119C200AA370D /* UserDefaultsKey.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				69378B0C28EA40E900593DCC /* ScaledFont.swift in Sources */,
 				69378B1628EA576100593DCC /* YelpNetworkingService.swift in Sources */,
 				69378B0E28EA434200593DCC /* Size.swift in Sources */,
+				69E577FC28F119C200AA370D /* UserDefaultsKey.swift in Sources */,
 				69378AF628EA3B7700593DCC /* MainView.swift in Sources */,
 				6946DCAA28EFDDBA00D9CB98 /* FirebaseAuthService.swift in Sources */,
 				69378B1E28EA9CE100593DCC /* BusinessListView.swift in Sources */,

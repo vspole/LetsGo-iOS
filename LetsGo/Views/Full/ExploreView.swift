@@ -105,7 +105,7 @@ extension ExploreView {
         ScrollView {
             LazyVStack {
                 ForEach(viewModel.businesses) { business in
-                    BusinessListView(configuration: business, categories: business.categories)
+                    BusinessListView(configuration: viewModel.createBusinessListConfiguration(business))
                 }
             }
         }
@@ -129,6 +129,7 @@ extension ExploreView {
         @Published var isLoading = false
         @Published var screenWidth = 0.0
         @Published var businesses = [BusinessModel]()
+        @Published var favoriteBusinesses = [BusinessModel]()
         @Published var selectedTabItem: TabItems? = TabItems.attractions
 
         var dependencyContainer: DependencyContainer
@@ -147,11 +148,13 @@ extension ExploreView {
 
         func viewDidAppear(_ view: ExploreView) {
             fetchBusinesses()
+            fetchFavoriteBusinesses()
             dependencyContainer.locationService.start()
         }
 
         func viewDidDisappear(_ view: ExploreView) {
             dependencyContainer.locationService.stop()
+            saveFavoriteBusinesses()
         }
 
         func fetchBusinesses() {
@@ -177,6 +180,33 @@ extension ExploreView {
                 }
                 self?.isLoading = false
             }
+        }
+        
+        func createBusinessListConfiguration(_ business: BusinessModel) -> BusinessListView.Configuration {
+            return BusinessListView.Configuration(business: business, isFavorited: isBusinessFavorited(business), categories: business.categories, favoriteButtoncompletion: favoriteButtonCompletion)
+        }
+        
+        private func favoriteButtonCompletion(_ business: BusinessModel) {
+            if isBusinessFavorited(business), let index = favoriteBusinesses.firstIndex(of: business) {
+                favoriteBusinesses.remove(at: index)
+            } else {
+                favoriteBusinesses.append(business)
+            }
+        }
+        
+        private func isBusinessFavorited(_ business: BusinessModel) -> Bool {
+            return favoriteBusinesses.contains(business)
+        }
+        
+        private func fetchFavoriteBusinesses() {
+            guard let favorites = (dependencyContainer.localStorageManager.insecurelyRetrieveData(forType: [BusinessModel].self, withKey: KEY_USER_FAVORITE_BUSINESSES)) as? [BusinessModel] else {
+                return
+            }
+            favoriteBusinesses = favorites
+        }
+        
+        private func saveFavoriteBusinesses() {
+            dependencyContainer.localStorageManager.insecurelyStore(data: favoriteBusinesses, forKey: KEY_USER_FAVORITE_BUSINESSES)
         }
     }
 }
