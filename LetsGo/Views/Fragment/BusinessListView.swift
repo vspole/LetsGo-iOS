@@ -37,34 +37,36 @@ struct BusinessListView: View {
                 }
                 
                 HStack(alignment: .center, spacing: 0) {
-                    Text(String(format: "%.1f", configuration.business.rating))
-                        .scaledFont(type: .openSansSemiBold, size: 15, color: Color.accentColor)
-                        .multilineTextAlignment(.leading)
-                        .padding(.trailing, 5)
-                    Image(systemName: "star.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 15, height: 15)
-                        .padding(.trailing, 5)
-                        .foregroundColor(Color.accentColor)
-
-                    Text("(\(configuration.business.review_count))")
-                        .scaledFont(type: .openSansRegular, size: 12, color: Color.accentColor)
-                        .multilineTextAlignment(.leading)
-                        .padding(.trailing, 15)
+                    HStack(spacing: 0) {
+                        Text(String(format: "%.1f", configuration.business.rating))
+                            .scaledFont(type: .openSansSemiBold, size: 15, color: Color.accentColor)
+                            .multilineTextAlignment(.leading)
+                            .padding(.trailing, 5)
+                            .padding(.leading, 0)
+                        Image(systemName: "star.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 15, height: 15)
+                            .padding(.trailing, 5)
+                            .foregroundColor(Color.accentColor)
+                        
+                        Text("(\(configuration.business.review_count))")
+                            .scaledFont(type: .openSansRegular, size: 12, color: Color.accentColor)
+                            .multilineTextAlignment(.leading)
+                    }
+                    .frame(width: 115, alignment: .leading)
                     Spacer()
-                    Button {
-                        configuration.favoriteButtoncompletion(configuration.business)
-                    } label: {
-                        Image(systemName: configuration.isFavorited ? "heart.fill" : "heart")
+                    HStack {
+                        Button {
+                            configuration.favoriteButtoncompletion(configuration.business)
+                        } label: {
+                            Image(systemName: configuration.isFavorited ? "heart.fill" : "heart")
+                                .foregroundColor(Color.accentColor)
+                        }
+                        Spacer()
+                        Image(systemName: "eye.slash")
                             .foregroundColor(Color.accentColor)
                     }
-//                    Spacer()
-//                    Image(systemName: "square.and.arrow.up")
-//                        .foregroundColor(Color.accentColor)
-                    Spacer()
-                    Image(systemName: "eye.slash")
-                        .foregroundColor(Color.accentColor)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
