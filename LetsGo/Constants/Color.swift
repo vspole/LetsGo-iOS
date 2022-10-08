@@ -7,4 +7,4 @@
 
 import SwiftUI
 
-let accentColor = Color("AccentColor")
+let ACCENT_COLOR = Color("AccentColor")

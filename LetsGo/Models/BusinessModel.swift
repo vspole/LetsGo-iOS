@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BusinessModel: Decodable, Hashable, Identifiable {
+struct BusinessModel: Hashable, Identifiable, Codable {
     let id: String
     let name: String
     let imageURLString: String

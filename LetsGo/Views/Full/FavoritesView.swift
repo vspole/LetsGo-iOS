@@ -1,20 +1,24 @@
 //
-//  ExploreView.swift
+//  FavoritesView.swift
 //  LetsGo
 //
-//  Created by Vishal Polepalli on 10/2/22.
+//  Created by Vishal Polepalli on 10/7/22.
 //
 
-import SwiftUI
 
-struct ExploreView: View {
+import SwiftUI
+import Foundation
+
+struct FavoritesView: View {
     @StateObject var viewModel: ViewModel
-    @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
         VStack {
             searchBar
-            tabSelectView
+                .onReceive(viewModel.$searchText) { (searchText) in
+                    viewModel.searchBusinesses()
+                }
+            Spacer()
             if viewModel.isLoading {
                 Spacer()
                 ProgressView()
@@ -33,24 +37,7 @@ struct ExploreView: View {
 }
 
 
-extension ExploreView {
-
-    var tabSelectView: some View {
-        HStack {
-            ForEach(TabItems.allCases, id: \.rawValue) { tabItem in
-                tabItemView(tab: tabItem)
-                    .onTapGesture {
-                        viewModel.searchText = ""
-                        viewModel.selectedTabItem = tabItem
-                        viewModel.fetchBusinesses()
-                        viewModel.isEditing = false
-                        UIApplication.shared.endEditing()
-                     }
-            }
-        }
-        .padding(.horizontal, MARGIN_SCREEN_LEFT_RIGHT)
-    }
-    
+extension FavoritesView {
     var searchBar: some View {
         HStack {
             TextField("Search ...", text: $viewModel.searchText)
@@ -61,11 +48,10 @@ extension ExploreView {
                 .padding(.horizontal, 10)
                 .onTapGesture {
                     viewModel.isEditing = true
-                    viewModel.selectedTabItem = nil
                 }
                 .onSubmit {
                     viewModel.isEditing = false
-                    viewModel.fetchBusinesses()
+                    viewModel.searchBusinesses()
                 }
 
             if viewModel.isEditing {
@@ -82,86 +68,46 @@ extension ExploreView {
             }
         }
     }
-
+    
     var businessList: some View {
         ScrollView {
             LazyVStack {
-                ForEach(viewModel.businesses) { business in
+                ForEach(viewModel.showFiltered ? viewModel.filteredBusinesses : viewModel.favoriteBusinesses) { business in
                     BusinessListView(configuration: viewModel.createBusinessListConfiguration(business))
                 }
             }
         }
-        //.padding(.horizontal, 10)
-    }
-
-    func tabItemView(tab: TabItems) -> some View {
-       return ZStack {
-           RoundedRectangle(cornerRadius: 10).fill(Color.accentColor)
-               .frame(height: 30)
-           Text(tab.rawValue)
-               .scaledFont(type: viewModel.selectedTabItem == tab ? .quickSandSemiBold : .quickSandLight, size: 17, color: .white)
-        }
     }
 }
 
-extension ExploreView {
+extension FavoritesView {
     class ViewModel: ObservableObject {
         @Published var searchText = ""
         @Published var isEditing = false
         @Published var isLoading = false
-        @Published var screenWidth = 0.0
-        @Published var businesses = [BusinessModel]()
         @Published var favoriteBusinesses = [BusinessModel]()
-        @Published var selectedTabItem: TabItems? = TabItems.attractions
+        @Published var filteredBusinesses = [BusinessModel]()
 
+        var showFiltered: Bool {
+            !searchText.isEmpty
+        }
+        
         var dependencyContainer: DependencyContainer
-
-        var latitude: String {
-            "\(dependencyContainer.locationService.latitude)"
-        }
-
-        var longitude: String {
-            "\(dependencyContainer.locationService.longitude)"
-        }
 
         init(container: DependencyContainer) {
             self.dependencyContainer = container
         }
 
-        func viewDidAppear(_ view: ExploreView) {
-            fetchBusinesses()
+        func viewDidAppear(_ view: FavoritesView) {
             fetchFavoriteBusinesses()
-            dependencyContainer.locationService.start()
         }
 
-        func viewDidDisappear(_ view: ExploreView) {
-            dependencyContainer.locationService.stop()
+        func viewDidDisappear(_ view: FavoritesView) {
             saveFavoriteBusinesses()
         }
-
-        func fetchBusinesses() {
-            if !dependencyContainer.locationService.permissionStatus {
-                //Alert View Controller need location
-                return
-            }
-
-            isLoading = true
-            var searchTerm: String?
-            if searchText.isEmpty {
-                searchTerm = selectedTabItem?.rawValue
-            } else {
-                searchTerm = searchText
-            }
-            dependencyContainer.yelpNetworkingService.fetchBusinesses(type: searchTerm ?? "", latitude: latitude, longitude: longitude) { [weak self] (response) in
-                switch response.result {
-                case .success(let value):
-                    self?.businesses = value.businesses
-                case .failure(let error):
-                    //Error handling here
-                    print("Error: ", error)
-                }
-                self?.isLoading = false
-            }
+        
+        func searchBusinesses() {
+            filteredBusinesses = favoriteBusinesses.filter{ $0.name.contains(searchText) || $0.categories[0].title.contains(searchText)}
         }
         
         func createBusinessListConfiguration(_ business: BusinessModel) -> BusinessListView.Configuration {
@@ -192,16 +138,4 @@ extension ExploreView {
             try? dependencyContainer.localStorageManager.insecurelyStore(encodable: favoriteBusinesses, forKey: KEY_USER_FAVORITE_BUSINESSES)
         }
     }
-}
-
-extension UIApplication {
-    func endEditing() {
-        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-}
-
-enum TabItems: String, CaseIterable {
-    case bars = "Bars"
-    case restaurants = "Restaurants"
-    case attractions = "Attractions"
 }
