@@ -190,7 +190,6 @@ extension PhoneLoginView {
                     return
                 }
                 
-                // TODO: Save verificationID to UserDefaults
                 guard let id = verificationID else { return }
                 
                 self?.verificationID = id
@@ -207,10 +206,7 @@ extension PhoneLoginView {
                     // TODO: Alert View Error
                     return
                 }
-                
-                // User has signed in successfully and currentUser object is valid
-                let currentUserInstance = Auth.auth().currentUser
-                
+                                
                 self?.mainViewModel.isUserLoggedIn = true
             }
         }
