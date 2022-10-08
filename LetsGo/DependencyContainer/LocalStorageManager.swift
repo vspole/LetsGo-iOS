@@ -19,6 +19,8 @@ public protocol LocalStorageManagerProtocol {
     func securelyRetrieveData(key: String) -> String?
     func insecurelyStore(data: Any, forKey: String)
     func insecurelyRetrieveData<T>(forType: T.Type, withKey: String) -> Any?
+    func insecurelyStore<T: Encodable>(encodable: T, forKey: String) throws
+    func insecurelyRetrieve<T: Decodable>(withKey: String) throws -> T?
 }
 
 public class LocalStorageManager: LocalStorageManagerProtocol {
@@ -68,5 +70,15 @@ public class LocalStorageManager: LocalStorageManagerProtocol {
         default:
             return UserDefaults.standard.object(forKey: withKey) as? Data
         }
+    }
+    
+    public func insecurelyStore<T: Encodable>(encodable: T, forKey: String) throws {
+        let encoded = try JSONEncoder().encode(encodable)
+        standardStore.set(encoded, forKey: forKey)
+    }
+
+    public func insecurelyRetrieve<T: Decodable>(withKey: String) throws -> T? {
+        guard let loadedData = standardStore.object(forKey: withKey) as? Data else { return nil }
+        return try JSONDecoder().decode(T.self, from: loadedData)
     }
 }

@@ -13,7 +13,6 @@ struct ExploreView: View {
 
     var body: some View {
         VStack {
-            logo
             searchBar
             tabSelectView
             if viewModel.isLoading {
@@ -51,24 +50,7 @@ extension ExploreView {
         }
         .padding(.horizontal, MARGIN_SCREEN_LEFT_RIGHT)
     }
-
-    var logo: some View {
-        Image("MainLogo")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(height: 75)
-            .padding(.horizontal, 100)
-    }
-
-    var logoInvert: some View {
-        Image("MainLogo")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(height: 75)
-            .padding(.horizontal, 100)
-            .colorInvert()
-    }
-
+    
     var searchBar: some View {
         HStack {
             TextField("Search ...", text: $viewModel.searchText)
@@ -192,6 +174,7 @@ extension ExploreView {
             } else {
                 favoriteBusinesses.append(business)
             }
+            saveFavoriteBusinesses()
         }
         
         private func isBusinessFavorited(_ business: BusinessModel) -> Bool {
@@ -199,14 +182,14 @@ extension ExploreView {
         }
         
         private func fetchFavoriteBusinesses() {
-            guard let favorites = (dependencyContainer.localStorageManager.insecurelyRetrieveData(forType: [BusinessModel].self, withKey: KEY_USER_FAVORITE_BUSINESSES)) as? [BusinessModel] else {
+            guard let favorites: [BusinessModel] = try? dependencyContainer.localStorageManager.insecurelyRetrieve(withKey: KEY_USER_FAVORITE_BUSINESSES) else {
                 return
             }
             favoriteBusinesses = favorites
         }
         
         private func saveFavoriteBusinesses() {
-            dependencyContainer.localStorageManager.insecurelyStore(data: favoriteBusinesses, forKey: KEY_USER_FAVORITE_BUSINESSES)
+            try? dependencyContainer.localStorageManager.insecurelyStore(encodable: favoriteBusinesses, forKey: KEY_USER_FAVORITE_BUSINESSES)
         }
     }
 }
