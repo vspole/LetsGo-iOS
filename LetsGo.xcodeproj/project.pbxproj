@@ -58,6 +58,7 @@
 		696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */; };
 		696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */; };
 		696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */; };
+		69E577F828F1138A00AA370D /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577F728F1138A00AA370D /* LocalStorageManager.swift */; };
 		F27C48F0E43B9D5871C3D80A /* Pods_LetsGoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F387D7AA02FA1CF3C12137 /* Pods_LetsGoTests.framework */; };
 		F9D40E6028ED07BC00BCA54B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D40E5F28ED07BC00BCA54B /* Color.swift */; };
 		F9D40E6728ED0CF600BCA54B /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9D40E6228ED0CF600BCA54B /* Quicksand-Light.ttf */; };
@@ -106,6 +107,7 @@
 		696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		69E577F728F1138A00AA370D /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		9EDBCC07CF2016A4ED88A0A5 /* Pods-LetsGo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGo.debug.xcconfig"; path = "Target Support Files/Pods-LetsGo/Pods-LetsGo.debug.xcconfig"; sourceTree = "<group>"; };
 		A3E732CC729F545B8C76F173 /* Pods-LetsGo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGo.release.xcconfig"; path = "Target Support Files/Pods-LetsGo/Pods-LetsGo.release.xcconfig"; sourceTree = "<group>"; };
 		A9F387D7AA02FA1CF3C12137 /* Pods_LetsGoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsGoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +221,7 @@
 				69378B0328EA3BF400593DCC /* EntityProtocol .swift */,
 				69378B0128EA3B9E00593DCC /* DependencyContainer.swift */,
 				69378B3128EB3F3B00593DCC /* LocationService.swift */,
+				69E577F728F1138A00AA370D /* LocalStorageManager.swift */,
 			);
 			path = DependencyContainer;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				69378B1A28EA614D00593DCC /* Endpoints.swift in Sources */,
 				69378B0228EA3B9E00593DCC /* DependencyContainer.swift in Sources */,
 				69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */,
+				69E577F828F1138A00AA370D /* LocalStorageManager.swift in Sources */,
 				F9D40E6028ED07BC00BCA54B /* Color.swift in Sources */,
 				69378B1828EA57C500593DCC /* BusinessModel.swift in Sources */,
 				69378B1C28EA677400593DCC /* BussinessSearchReturnModel.swift in Sources */,
