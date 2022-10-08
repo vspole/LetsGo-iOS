@@ -14,7 +14,7 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             if viewModel.isUserLoggedIn {
-                ExploreView(viewModel: .init(container: viewModel.container))
+                TabBarView(viewModel: .init(container: viewModel.container))
             } else {
                 PhoneLoginView(viewModel: .init(container: viewModel.container, mainViewModel: viewModel))
             }
