@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6245A558F382DB58A8240378 /* Pods_LetsGo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18ABF925E90F109BFB1CA756 /* Pods_LetsGo.framework */; };
+		6931B5E728F2725600DDEB46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6931B5E628F2725600DDEB46 /* GoogleService-Info.plist */; };
 		69378AF428EA3B7700593DCC /* LetsGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378AF328EA3B7700593DCC /* LetsGoApp.swift */; };
 		69378AF628EA3B7700593DCC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378AF528EA3B7700593DCC /* MainView.swift */; };
 		69378AF828EA3B7900593DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69378AF728EA3B7900593DCC /* Assets.xcassets */; };
@@ -23,7 +24,6 @@
 		69378B1C28EA677400593DCC /* BussinessSearchReturnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B1B28EA677400593DCC /* BussinessSearchReturnModel.swift */; };
 		69378B1E28EA9CE100593DCC /* BusinessListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B1D28EA9CE100593DCC /* BusinessListView.swift */; };
 		69378B2428EAA97900593DCC /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B2328EAA97900593DCC /* RatingStarView.swift */; };
-		69378B2828EAC2D600593DCC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69378B2728EAC2D600593DCC /* GoogleService-Info.plist */; };
 		69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B3128EB3F3B00593DCC /* LocationService.swift */; };
 		6946DC7128EF9E8000D9CB98 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DC7028EF9E8000D9CB98 /* FirebaseAnalytics */; };
 		6946DC7328EF9E8000D9CB98 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DC7228EF9E8000D9CB98 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -85,6 +85,7 @@
 /* Begin PBXFileReference section */
 		18ABF925E90F109BFB1CA756 /* Pods_LetsGo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsGo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28836FEA71FC5A77700D263B /* Pods-LetsGoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsGoTests.debug.xcconfig"; path = "Target Support Files/Pods-LetsGoTests/Pods-LetsGoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6931B5E628F2725600DDEB46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69378AF028EA3B7700593DCC /* LetsGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69378AF328EA3B7700593DCC /* LetsGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsGoApp.swift; sourceTree = "<group>"; };
 		69378AF528EA3B7700593DCC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -100,7 +101,6 @@
 		69378B1B28EA677400593DCC /* BussinessSearchReturnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BussinessSearchReturnModel.swift; sourceTree = "<group>"; };
 		69378B1D28EA9CE100593DCC /* BusinessListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListView.swift; sourceTree = "<group>"; };
 		69378B2328EAA97900593DCC /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
-		69378B2728EAC2D600593DCC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		6946DCA628EFA12A00D9CB98 /* LetsGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LetsGo.entitlements; sourceTree = "<group>"; };
 		6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginView.swift; sourceTree = "<group>"; };
@@ -207,6 +207,7 @@
 		69378AF228EA3B7700593DCC /* LetsGo */ = {
 			isa = PBXGroup;
 			children = (
+				6931B5E628F2725600DDEB46 /* GoogleService-Info.plist */,
 				6946DCA628EFA12A00D9CB98 /* LetsGo.entitlements */,
 				696B424428EBDFA100695C69 /* Fonts */,
 				69378B2C28EB3E1D00593DCC /* Views */,
@@ -216,7 +217,6 @@
 				69378B0528EA3C3C00593DCC /* DependencyContainer */,
 				69378AF328EA3B7700593DCC /* LetsGoApp.swift */,
 				69378AF728EA3B7900593DCC /* Assets.xcassets */,
-				69378B2728EAC2D600593DCC /* GoogleService-Info.plist */,
 			);
 			path = LetsGo;
 			sourceTree = "<group>";
@@ -467,8 +467,8 @@
 				F9D40E6828ED0CF600BCA54B /* Quicksand-Regular.ttf in Resources */,
 				696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */,
 				F9D40E6728ED0CF600BCA54B /* Quicksand-Light.ttf in Resources */,
+				6931B5E728F2725600DDEB46 /* GoogleService-Info.plist in Resources */,
 				696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */,
-				69378B2828EAC2D600593DCC /* GoogleService-Info.plist in Resources */,
 				F9D40E6928ED0CF600BCA54B /* Quicksand-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
