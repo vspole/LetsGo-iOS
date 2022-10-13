@@ -28,6 +28,8 @@ extension DependencyContainer {
             YelpNetworkingService(entity: container),
             LocationService(entity: container),
             FirebaseAuthService(entity: container),
+            DataComponent(entity: container),
+            TokenManager(entity: container),
             LocalStorageManager()
         ]
         return container
@@ -41,5 +43,8 @@ extension DependencyContainer {
     var locationService: LocationServiceProtocol { getComponent() }
     var firebaseAuthService: FirebaseAuthServiceProtocol { getComponent() }
     var localStorageManager: LocalStorageManagerProtocol { getComponent() }
+    var appState: Store<AppState> { dataComponent.appState }
+    var dataComponent: DataComponentProtocol { getComponent() }
+    var tokenManager: TokenManagerProtocol { getComponent() }
 }
 
