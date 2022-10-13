@@ -11,7 +11,7 @@ import FirebaseAuth
 protocol FirebaseAuthServiceProtocol: AnyObject {
     func requestOTP(phoneNumber: String, completion: @escaping (String?, Error?) -> Void)
     func signInWithCode(code: String, verificationId: String, completion: @escaping (AuthDataResult?, Error?) -> Void)
-    func getUserIDToken(completion: @escaping (AuthTokenResult?) -> Void)
+    func getUserIDToken(completion: @escaping (String?) -> Void)
     func getCurrentUser() -> User?
     func isUserSignedIn() -> Bool
     func signOutUser()
@@ -35,14 +35,14 @@ class FirebaseAuthService: DependencyContainer.Component, FirebaseAuthServicePro
         }
     }
     
-    func getUserIDToken(completion: @escaping (AuthTokenResult?) -> Void) {
+    func getUserIDToken(completion: @escaping (String?) -> Void) {
         guard let currentUser = getCurrentUser() else {
             completion(nil)
             return
         }
         
         currentUser.getIDTokenResult(forcingRefresh: true) { idToken, error in
-            completion(idToken)
+            completion(idToken?.token)
         }
     }
     
@@ -60,5 +60,7 @@ class FirebaseAuthService: DependencyContainer.Component, FirebaseAuthServicePro
         } catch {
             print("Error: ", error)
         }
+        // Reset the App State on sign out
+        entity.dataComponent.appState.value = .init()
     }
 }

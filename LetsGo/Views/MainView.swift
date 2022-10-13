@@ -36,7 +36,7 @@ extension MainView {
         }
         
         func viewDidAppear(_ view: MainView) {
-            isUserLoggedIn = container.firebaseAuthService.isUserSignedIn()
+            isUserLoggedIn = container.appState.value.isLoggedIn
         }
     }
 }
