@@ -217,7 +217,7 @@ extension PhoneLoginView {
                     return
                 }
                 self?.container.appState[\.userData.token] = token
-                self?.mainViewModel.isUserLoggedIn = true
+                self?.mainViewModel.activeView = MainView.Views.tabBarView
             }
         }
     }
