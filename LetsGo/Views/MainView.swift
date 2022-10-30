@@ -28,7 +28,7 @@ struct MainView: View {
 
 extension MainView {
     class ViewModel: ObservableObject {
-        @Published var activeView: Views = .loginView
+        @Published var activeView: Views = .splashView
 
         var container: DependencyContainer
         
@@ -37,8 +37,8 @@ extension MainView {
         }
         
         func viewDidAppear(_ view: MainView) {
-            if container.firebaseAuthService.isUserSignedIn() {
-                activeView = .tabBarView
+            Task {
+               activeView = await container.connectionService.setup()
             }
         }
     }
@@ -49,5 +49,7 @@ extension MainView {
         case loginView
         case tabBarView
         case upgradeView
+        case splashView
+        case errorView
     }
 }

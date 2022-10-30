@@ -26,12 +26,14 @@ extension DependencyContainer {
         let container = DependencyContainer()
         container.components = [
             YelpNetworkingService(entity: container),
+            ConfigNetworkingService(entity: container),
             LocationService(entity: container),
             FirebaseAuthService(entity: container),
             DataComponent(entity: container),
             TokenManager(entity: container),
             LocalStorageManager(),
-            VersionProvider()
+            VersionProvider(),
+            ConnectionService(entity: container)
         ]
         return container
     }
@@ -48,5 +50,7 @@ extension DependencyContainer {
     var dataComponent: DataComponentProtocol { getComponent() }
     var tokenManager: TokenManagerProtocol { getComponent() }
     var versionProvider: VersionProviderProtocol { getComponent() }
+    var configNetworkingService: ConfigNetworkingServiceProtocol { getComponent() }
+    var connectionService: ConnectionServiceProtocol { getComponent() }
 }
 
