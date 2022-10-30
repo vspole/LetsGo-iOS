@@ -33,6 +33,9 @@
 		69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B3128EB3F3B00593DCC /* LocationService.swift */; };
 		6941229A290EF4CA00D66C99 /* VersionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69412299290EF4CA00D66C99 /* VersionProvider.swift */; };
 		6941229D290EF52500D66C99 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941229C290EF52500D66C99 /* UIDevice+Extensions.swift */; };
+		6941229F290EF9F600D66C99 /* ConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941229E290EF9F600D66C99 /* ConnectionService.swift */; };
+		694122A1290EFE6300D66C99 /* ConfigReturnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694122A0290EFE6300D66C99 /* ConfigReturnModel.swift */; };
+		694122A3290EFEBD00D66C99 /* ConfigNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694122A2290EFEBD00D66C99 /* ConfigNetworkingService.swift */; };
 		6946DC7128EF9E8000D9CB98 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DC7028EF9E8000D9CB98 /* FirebaseAnalytics */; };
 		6946DC7328EF9E8000D9CB98 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DC7228EF9E8000D9CB98 /* FirebaseAnalyticsOnDeviceConversion */; };
 		6946DC7528EF9E8000D9CB98 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DC7428EF9E8000D9CB98 /* FirebaseAnalyticsSwift */; };
@@ -118,6 +121,9 @@
 		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		69412299290EF4CA00D66C99 /* VersionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionProvider.swift; sourceTree = "<group>"; };
 		6941229C290EF52500D66C99 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
+		6941229E290EF9F600D66C99 /* ConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionService.swift; sourceTree = "<group>"; };
+		694122A0290EFE6300D66C99 /* ConfigReturnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigReturnModel.swift; sourceTree = "<group>"; };
+		694122A2290EFEBD00D66C99 /* ConfigNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigNetworkingService.swift; sourceTree = "<group>"; };
 		6946DCA628EFA12A00D9CB98 /* LetsGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LetsGo.entitlements; sourceTree = "<group>"; };
 		6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginView.swift; sourceTree = "<group>"; };
 		6946DCA928EFDDBA00D9CB98 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
@@ -273,6 +279,8 @@
 				69378B1528EA576100593DCC /* YelpNetworkingService.swift */,
 				69378B1928EA614D00593DCC /* Endpoints.swift */,
 				6946DCA928EFDDBA00D9CB98 /* FirebaseAuthService.swift */,
+				6941229E290EF9F600D66C99 /* ConnectionService.swift */,
+				694122A2290EFEBD00D66C99 /* ConfigNetworkingService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -283,6 +291,7 @@
 				69378B1728EA57C500593DCC /* BusinessModel.swift */,
 				69378B1B28EA677400593DCC /* BussinessSearchReturnModel.swift */,
 				F9D40E6D28ED0F6A00BCA54B /* CategoryModel.swift */,
+				694122A0290EFE6300D66C99 /* ConfigReturnModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -566,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6941229F290EF9F600D66C99 /* ConnectionService.swift in Sources */,
 				69E577FE28F1211F00AA370D /* FavoritesView.swift in Sources */,
 				69378B0C28EA40E900593DCC /* ScaledFont.swift in Sources */,
 				6941229A290EF4CA00D66C99 /* VersionProvider.swift in Sources */,
@@ -576,6 +586,7 @@
 				69E577FC28F119C200AA370D /* UserDefaultsKey.swift in Sources */,
 				69167A0C28F7C4E9005267FC /* StartUpProtocol.swift in Sources */,
 				69167A0828F7C2AE005267FC /* Store.swift in Sources */,
+				694122A3290EFEBD00D66C99 /* ConfigNetworkingService.swift in Sources */,
 				69378AF628EA3B7700593DCC /* MainView.swift in Sources */,
 				6946DCAA28EFDDBA00D9CB98 /* FirebaseAuthService.swift in Sources */,
 				69378B1E28EA9CE100593DCC /* BusinessListView.swift in Sources */,
@@ -590,6 +601,7 @@
 				69167A1028F7C5C3005267FC /* TokenManager.swift in Sources */,
 				69378B2428EAA97900593DCC /* RatingStarView.swift in Sources */,
 				69378AF428EA3B7700593DCC /* LetsGoApp.swift in Sources */,
+				694122A1290EFE6300D66C99 /* ConfigReturnModel.swift in Sources */,
 				F9D40E6E28ED0F6A00BCA54B /* CategoryModel.swift in Sources */,
 				69378B0428EA3BF400593DCC /* EntityProtocol .swift in Sources */,
 				69378B0728EA3C5800593DCC /* ExploreView.swift in Sources */,

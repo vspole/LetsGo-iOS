@@ -41,7 +41,7 @@ extension DataComponent: StartUpProtocol {
         if appState.value.isLoggedIn {
             entity.firebaseAuthService.getUserIDToken { [weak self] userToken in
                 guard let token = userToken else {
-                    // TODO: Error Handeling
+                    // TODO: Error Handling
                     return
                 }
                 self?.appState[\.userData.token] = token
