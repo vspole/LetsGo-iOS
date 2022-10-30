@@ -30,7 +30,8 @@ extension DependencyContainer {
             FirebaseAuthService(entity: container),
             DataComponent(entity: container),
             TokenManager(entity: container),
-            LocalStorageManager()
+            LocalStorageManager(),
+            VersionProvider()
         ]
         return container
     }
@@ -46,5 +47,6 @@ extension DependencyContainer {
     var appState: Store<AppState> { dataComponent.appState }
     var dataComponent: DataComponentProtocol { getComponent() }
     var tokenManager: TokenManagerProtocol { getComponent() }
+    var versionProvider: VersionProviderProtocol { getComponent() }
 }
 
