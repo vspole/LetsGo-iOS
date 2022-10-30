@@ -13,10 +13,11 @@ struct MainView: View {
     
     var body: some View {
         NavigationStack {
-            if viewModel.isUserLoggedIn {
-                TabBarView(viewModel: .init(container: viewModel.container))
-            } else {
+            switch viewModel.activeView {
+            case .loginView:
                 PhoneLoginView(viewModel: .init(container: viewModel.container, mainViewModel: viewModel))
+            default:
+                TabBarView(viewModel: .init(container: viewModel.container))
             }
         }
         .onAppear {
@@ -27,8 +28,8 @@ struct MainView: View {
 
 extension MainView {
     class ViewModel: ObservableObject {
-        @Published var isUserLoggedIn = false
-        
+        @Published var activeView: Views = .loginView
+
         var container: DependencyContainer
         
         init(container: DependencyContainer) {
@@ -36,7 +37,17 @@ extension MainView {
         }
         
         func viewDidAppear(_ view: MainView) {
-            isUserLoggedIn = container.appState.value.isLoggedIn
+            if container.firebaseAuthService.isUserSignedIn() {
+                activeView = .tabBarView
+            }
         }
+    }
+}
+
+extension MainView {
+    enum Views {
+        case loginView
+        case tabBarView
+        case upgradeView
     }
 }
