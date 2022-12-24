@@ -11,6 +11,7 @@ import Combine
 struct AppState: Equatable {
     var isLoggedIn: Bool { !userData.token.isEmpty }
     var userData = UserData()
+    var clientAPIKey: String = ""
 }
 
 // MARK: - User Data

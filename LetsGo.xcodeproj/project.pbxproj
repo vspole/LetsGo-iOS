@@ -31,6 +31,7 @@
 		69378B1E28EA9CE100593DCC /* BusinessListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B1D28EA9CE100593DCC /* BusinessListView.swift */; };
 		69378B2428EAA97900593DCC /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B2328EAA97900593DCC /* RatingStarView.swift */; };
 		69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B3128EB3F3B00593DCC /* LocationService.swift */; };
+		693B2A0E2957A66600769650 /* Secrets in Resources */ = {isa = PBXBuildFile; fileRef = 693B2A0D2957A66600769650 /* Secrets */; };
 		6941229A290EF4CA00D66C99 /* VersionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69412299290EF4CA00D66C99 /* VersionProvider.swift */; };
 		6941229D290EF52500D66C99 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941229C290EF52500D66C99 /* UIDevice+Extensions.swift */; };
 		6941229F290EF9F600D66C99 /* ConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941229E290EF9F600D66C99 /* ConnectionService.swift */; };
@@ -70,7 +71,6 @@
 		696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */; };
 		696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */; };
 		696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */; };
-		698507042957765300AE1920 /* secrets.json.sample in Resources */ = {isa = PBXBuildFile; fileRef = 698507032957765300AE1920 /* secrets.json.sample */; };
 		69E577F828F1138A00AA370D /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577F728F1138A00AA370D /* LocalStorageManager.swift */; };
 		69E577FA28F1164B00AA370D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577F928F1164B00AA370D /* TabBarView.swift */; };
 		69E577FC28F119C200AA370D /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577FB28F119C200AA370D /* UserDefaultsKey.swift */; };
@@ -121,6 +121,7 @@
 		69378B1D28EA9CE100593DCC /* BusinessListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListView.swift; sourceTree = "<group>"; };
 		69378B2328EAA97900593DCC /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
 		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		693B2A0D2957A66600769650 /* Secrets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Secrets; sourceTree = "<group>"; };
 		69412299290EF4CA00D66C99 /* VersionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionProvider.swift; sourceTree = "<group>"; };
 		6941229C290EF52500D66C99 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 		6941229E290EF9F600D66C99 /* ConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionService.swift; sourceTree = "<group>"; };
@@ -135,7 +136,6 @@
 		696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		698507032957765300AE1920 /* secrets.json.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = secrets.json.sample; sourceTree = "<group>"; };
 		698507062957778300AE1920 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		69E577F728F1138A00AA370D /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		69E577F928F1164B00AA370D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -234,8 +234,8 @@
 		69378AF228EA3B7700593DCC /* LetsGo */ = {
 			isa = PBXGroup;
 			children = (
+				693B2A0D2957A66600769650 /* Secrets */,
 				698507052957776B00AE1920 /* ci_scripts */,
-				698507022957763D00AE1920 /* Secrets */,
 				6931B5E628F2725600DDEB46 /* GoogleService-Info.plist */,
 				6946DCA628EFA12A00D9CB98 /* LetsGo.entitlements */,
 				6941229B290EF50700D66C99 /* Extensions */,
@@ -367,14 +367,6 @@
 				696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */,
 			);
 			path = OpenSans;
-			sourceTree = "<group>";
-		};
-		698507022957763D00AE1920 /* Secrets */ = {
-			isa = PBXGroup;
-			children = (
-				698507032957765300AE1920 /* secrets.json.sample */,
-			);
-			path = Secrets;
 			sourceTree = "<group>";
 		};
 		698507052957776B00AE1920 /* ci_scripts */ = {
@@ -532,9 +524,9 @@
 				F9D40E6828ED0CF600BCA54B /* Quicksand-Regular.ttf in Resources */,
 				696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */,
 				F9D40E6728ED0CF600BCA54B /* Quicksand-Light.ttf in Resources */,
+				693B2A0E2957A66600769650 /* Secrets in Resources */,
 				6931B5E728F2725600DDEB46 /* GoogleService-Info.plist in Resources */,
 				696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */,
-				698507042957765300AE1920 /* secrets.json.sample in Resources */,
 				F9D40E6928ED0CF600BCA54B /* Quicksand-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,10 +16,13 @@ class ConnectionService: DependencyContainer.Component, ConnectionServiceProtoco
         do {
             await refreshTokenIfNeeded()
             let config = try await fetchConfig()
-            if isForceUpgradeRequired(config: config) {
+            let retrievedKey = retrieveAPIKey()
+            if isForceUpgradeRequired(config: config) || !retrievedKey {
                 return .upgradeView
             } else if isUserLoggedIn() {
                 return .tabBarView
+            } else if !isUserLoggedIn() {
+                return .loginView
             }
         } catch {
             // TODO: Error View Here
@@ -66,5 +69,20 @@ class ConnectionService: DependencyContainer.Component, ConnectionServiceProtoco
             return true
         }
         return appVersion.compare(config.minSupportedVersion, options: .numeric) == .orderedAscending
+    }
+
+    private func retrieveAPIKey() -> Bool {
+        // Get the path to the Secrets.json file
+        let filePath = Bundle.main.path(forResource: "Secrets/secrets", ofType: "json")
+
+        // Load the contents of the file into a Data object and serialize it
+        guard let filePath = filePath,
+              let data = try? Data(contentsOf: URL(fileURLWithPath: filePath)),
+              let secrets = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+              else { return false }
+
+        // Extract the API key from the dictionary
+        entity.appState[\.clientAPIKey] = secrets["client_api_key"] as! String
+        return true
     }
 }

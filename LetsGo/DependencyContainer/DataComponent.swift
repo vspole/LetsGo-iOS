@@ -27,16 +27,20 @@ extension DataComponent: StartUpProtocol {
     }
     
     func startUp() {
+        starUpUserToken()
+    }
+
+    private func starUpUserToken() {
         // On-load, retrieve any stored token from the token manager
         appState[\.userData.token] = entity.tokenManager.retrieveToken()
-        
+
         // When updating the token, auto-store in the token manager
         appState.publisher(for: \.userData.token)
             .sink { [weak self] token in
                 self?.entity.tokenManager.storeToken(token: token)
             }
             .store(in: &cancellables)
-        
+
         // Refresh User ID Token if logged in
         if appState.value.isLoggedIn {
             entity.firebaseAuthService.getUserIDToken { [weak self] userToken in
