@@ -16,8 +16,10 @@ struct MainView: View {
             switch viewModel.activeView {
             case .loginView:
                 PhoneLoginView(viewModel: .init(container: viewModel.container, mainViewModel: viewModel))
-            default:
+            case .tabBarView:
                 TabBarView(viewModel: .init(container: viewModel.container))
+            default:
+                SplashView()
             }
         }
         .onAppear {
@@ -35,10 +37,11 @@ extension MainView {
         init(container: DependencyContainer) {
             self.container = container
         }
-        
+
+        @MainActor
         func viewDidAppear(_ view: MainView) {
-            Task {
-               activeView = await container.connectionService.setup()
+            Task.init {
+                self.activeView = await container.connectionService.setup()
             }
         }
     }
