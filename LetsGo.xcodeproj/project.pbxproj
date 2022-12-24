@@ -122,6 +122,7 @@
 		69378B2328EAA97900593DCC /* RatingStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStarView.swift; sourceTree = "<group>"; };
 		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		693B2A0D2957A66600769650 /* Secrets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Secrets; sourceTree = "<group>"; };
+		693B2A122957B5A600769650 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		69412299290EF4CA00D66C99 /* VersionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionProvider.swift; sourceTree = "<group>"; };
 		6941229C290EF52500D66C99 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 		6941229E290EF9F600D66C99 /* ConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionService.swift; sourceTree = "<group>"; };
@@ -136,7 +137,6 @@
 		696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		698507062957778300AE1920 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		69E577F728F1138A00AA370D /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		69E577F928F1164B00AA370D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		69E577FB28F119C200AA370D /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
@@ -214,6 +214,7 @@
 		69378AE728EA3B7700593DCC = {
 			isa = PBXGroup;
 			children = (
+				693B2A102957B42F00769650 /* ci_scripts */,
 				69378AF228EA3B7700593DCC /* LetsGo */,
 				694CAC5128EE2AC90061339A /* LetsGoTests */,
 				69378AF128EA3B7700593DCC /* Products */,
@@ -235,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				693B2A0D2957A66600769650 /* Secrets */,
-				698507052957776B00AE1920 /* ci_scripts */,
 				6931B5E628F2725600DDEB46 /* GoogleService-Info.plist */,
 				6946DCA628EFA12A00D9CB98 /* LetsGo.entitlements */,
 				6941229B290EF50700D66C99 /* Extensions */,
@@ -334,6 +334,14 @@
 			path = Fragment;
 			sourceTree = "<group>";
 		};
+		693B2A102957B42F00769650 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				693B2A122957B5A600769650 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 		6941229B290EF50700D66C99 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,14 +375,6 @@
 				696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */,
 			);
 			path = OpenSans;
-			sourceTree = "<group>";
-		};
-		698507052957776B00AE1920 /* ci_scripts */ = {
-			isa = PBXGroup;
-			children = (
-				698507062957778300AE1920 /* ci_post_clone.sh */,
-			);
-			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		C6BB6957E523FF0F598C5951 /* Pods */ = {
