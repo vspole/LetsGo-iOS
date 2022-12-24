@@ -62,7 +62,7 @@ class ConnectionService: DependencyContainer.Component, ConnectionServiceProtoco
     }
 
     private func isForceUpgradeRequired(config: ConfigReturnModel) -> Bool {
-        guard let appVersion = entity.versionProvider.appVersion else {
+        guard let appVersion = entity.versionProvider.shortAppVersion else {
             return true
         }
         return appVersion.compare(config.minSupportedVersion, options: .numeric) == .orderedAscending

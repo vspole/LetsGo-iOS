@@ -36,6 +36,7 @@
 		6941229F290EF9F600D66C99 /* ConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941229E290EF9F600D66C99 /* ConnectionService.swift */; };
 		694122A1290EFE6300D66C99 /* ConfigReturnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694122A0290EFE6300D66C99 /* ConfigReturnModel.swift */; };
 		694122A3290EFEBD00D66C99 /* ConfigNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694122A2290EFEBD00D66C99 /* ConfigNetworkingService.swift */; };
+		694122A5290F055000D66C99 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694122A4290F055000D66C99 /* SplashView.swift */; };
 		6946DC7128EF9E8000D9CB98 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DC7028EF9E8000D9CB98 /* FirebaseAnalytics */; };
 		6946DC7328EF9E8000D9CB98 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DC7228EF9E8000D9CB98 /* FirebaseAnalyticsOnDeviceConversion */; };
 		6946DC7528EF9E8000D9CB98 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6946DC7428EF9E8000D9CB98 /* FirebaseAnalyticsSwift */; };
@@ -124,6 +125,7 @@
 		6941229E290EF9F600D66C99 /* ConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionService.swift; sourceTree = "<group>"; };
 		694122A0290EFE6300D66C99 /* ConfigReturnModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigReturnModel.swift; sourceTree = "<group>"; };
 		694122A2290EFEBD00D66C99 /* ConfigNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigNetworkingService.swift; sourceTree = "<group>"; };
+		694122A4290F055000D66C99 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		6946DCA628EFA12A00D9CB98 /* LetsGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LetsGo.entitlements; sourceTree = "<group>"; };
 		6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLoginView.swift; sourceTree = "<group>"; };
 		6946DCA928EFDDBA00D9CB98 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				6946DCA728EFC86F00D9CB98 /* PhoneLoginView.swift */,
 				69E577F928F1164B00AA370D /* TabBarView.swift */,
 				69E577FD28F1211F00AA370D /* FavoritesView.swift */,
+				694122A4290F055000D66C99 /* SplashView.swift */,
 			);
 			path = Full;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				69378B0228EA3B9E00593DCC /* DependencyContainer.swift in Sources */,
 				69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */,
 				69E577F828F1138A00AA370D /* LocalStorageManager.swift in Sources */,
+				694122A5290F055000D66C99 /* SplashView.swift in Sources */,
 				69167A0E28F7C583005267FC /* DataComponent.swift in Sources */,
 				F9D40E6028ED07BC00BCA54B /* Color.swift in Sources */,
 				69378B1828EA57C500593DCC /* BusinessModel.swift in Sources */,
