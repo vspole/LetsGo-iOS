@@ -41,7 +41,10 @@ class FirebaseAuthService: DependencyContainer.Component, FirebaseAuthServicePro
             return
         }
         
-        currentUser.getIDTokenResult(forcingRefresh: true) { idToken, error in
+        currentUser.getIDTokenResult(forcingRefresh: true) { [weak self] idToken, error in
+            if let token = idToken?.token {
+                self?.entity.appState[\.userData.token] = token
+            }
             completion(idToken?.token)
         }
     }

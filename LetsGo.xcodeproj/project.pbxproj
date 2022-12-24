@@ -70,6 +70,7 @@
 		696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */; };
 		696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */; };
 		696B425728EBDFD800695C69 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */; };
+		698507042957765300AE1920 /* secrets.json.sample in Resources */ = {isa = PBXBuildFile; fileRef = 698507032957765300AE1920 /* secrets.json.sample */; };
 		69E577F828F1138A00AA370D /* LocalStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577F728F1138A00AA370D /* LocalStorageManager.swift */; };
 		69E577FA28F1164B00AA370D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577F928F1164B00AA370D /* TabBarView.swift */; };
 		69E577FC28F119C200AA370D /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E577FB28F119C200AA370D /* UserDefaultsKey.swift */; };
@@ -134,6 +135,8 @@
 		696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		696B424A28EBDFD700695C69 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		696B424B28EBDFD700695C69 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		698507032957765300AE1920 /* secrets.json.sample */ = {isa = PBXFileReference; lastKnownFileType = text; path = secrets.json.sample; sourceTree = "<group>"; };
+		698507062957778300AE1920 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		69E577F728F1138A00AA370D /* LocalStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageManager.swift; sourceTree = "<group>"; };
 		69E577F928F1164B00AA370D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		69E577FB28F119C200AA370D /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 		69378AF228EA3B7700593DCC /* LetsGo */ = {
 			isa = PBXGroup;
 			children = (
+				698507052957776B00AE1920 /* ci_scripts */,
+				698507022957763D00AE1920 /* Secrets */,
 				6931B5E628F2725600DDEB46 /* GoogleService-Info.plist */,
 				6946DCA628EFA12A00D9CB98 /* LetsGo.entitlements */,
 				6941229B290EF50700D66C99 /* Extensions */,
@@ -362,6 +367,22 @@
 				696B424628EBDFC500695C69 /* OpenSans-Bold.ttf */,
 			);
 			path = OpenSans;
+			sourceTree = "<group>";
+		};
+		698507022957763D00AE1920 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				698507032957765300AE1920 /* secrets.json.sample */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
+		698507052957776B00AE1920 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				698507062957778300AE1920 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		C6BB6957E523FF0F598C5951 /* Pods */ = {
@@ -513,6 +534,7 @@
 				F9D40E6728ED0CF600BCA54B /* Quicksand-Light.ttf in Resources */,
 				6931B5E728F2725600DDEB46 /* GoogleService-Info.plist in Resources */,
 				696B424728EBDFC500695C69 /* OpenSans-Bold.ttf in Resources */,
+				698507042957765300AE1920 /* secrets.json.sample in Resources */,
 				F9D40E6928ED0CF600BCA54B /* Quicksand-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
