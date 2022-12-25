@@ -32,6 +32,7 @@
 		69378B2428EAA97900593DCC /* RatingStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B2328EAA97900593DCC /* RatingStarView.swift */; };
 		69378B3228EB3F3B00593DCC /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69378B3128EB3F3B00593DCC /* LocationService.swift */; };
 		693B2A0E2957A66600769650 /* Secrets in Resources */ = {isa = PBXBuildFile; fileRef = 693B2A0D2957A66600769650 /* Secrets */; };
+		693B2A162957CA4E00769650 /* secrets.json in Resources */ = {isa = PBXBuildFile; fileRef = 693B2A152957CA4E00769650 /* secrets.json */; };
 		6941229A290EF4CA00D66C99 /* VersionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69412299290EF4CA00D66C99 /* VersionProvider.swift */; };
 		6941229D290EF52500D66C99 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941229C290EF52500D66C99 /* UIDevice+Extensions.swift */; };
 		6941229F290EF9F600D66C99 /* ConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941229E290EF9F600D66C99 /* ConnectionService.swift */; };
@@ -123,6 +124,7 @@
 		69378B3128EB3F3B00593DCC /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		693B2A0D2957A66600769650 /* Secrets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Secrets; sourceTree = "<group>"; };
 		693B2A122957B5A600769650 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		693B2A152957CA4E00769650 /* secrets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = secrets.json; path = LetsGo/Secrets/secrets.json; sourceTree = "<group>"; };
 		69412299290EF4CA00D66C99 /* VersionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionProvider.swift; sourceTree = "<group>"; };
 		6941229C290EF52500D66C99 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
 		6941229E290EF9F600D66C99 /* ConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionService.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 		69378AE728EA3B7700593DCC = {
 			isa = PBXGroup;
 			children = (
+				693B2A152957CA4E00769650 /* secrets.json */,
 				693B2A102957B42F00769650 /* ci_scripts */,
 				69378AF228EA3B7700593DCC /* LetsGo */,
 				694CAC5128EE2AC90061339A /* LetsGoTests */,
@@ -517,6 +520,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693B2A162957CA4E00769650 /* secrets.json in Resources */,
 				69378AF828EA3B7900593DCC /* Assets.xcassets in Resources */,
 				F9D40E6B28ED0CF600BCA54B /* Quicksand-SemiBold.ttf in Resources */,
 				696B425628EBDFD800695C69 /* OpenSans-Regular.ttf in Resources */,
