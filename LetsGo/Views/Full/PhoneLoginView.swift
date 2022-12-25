@@ -206,8 +206,18 @@ extension PhoneLoginView {
                     // TODO: Alert View Error
                     return
                 }
-                                
-                self?.mainViewModel.isUserLoggedIn = true
+                self?.getToken()
+            }
+        }
+        
+        private func getToken() {
+            container.firebaseAuthService.getUserIDToken { [weak self] userToken in
+                guard let token = userToken else {
+                    // TODO: Error Handeling 
+                    return
+                }
+                self?.container.appState[\.userData.token] = token
+                self?.mainViewModel.activeView = MainView.Views.tabBarView
             }
         }
     }
